@@ -1,0 +1,27 @@
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.background {
+    height: 100vh;
+    width: 70%;
+    background-image: url('./img/farm.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 700px) {
+    .background {
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    .background {
+        width: 50%;
+    }
+}

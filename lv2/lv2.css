@@ -1,0 +1,58 @@
+/*------------------ここからヘッダー---------------------*/
+header{
+  height: 90px;
+  width: 100%;
+  z-index: 10;
+  background: -moz-linear-gradient(right, rgb(32,216,186), #FFF);
+  background: -webkit-linear-gradient(right,  rgb(32,216,186), #FFF);
+  background: linear-gradient(to left,  rgb(32,216,186), #FFF);
+  position: fixed;
+  display: flex;
+}
+
+header img{
+  padding: 5px 0px 0px 20px;
+  width: 220px;
+  height: 84px;
+  display: flex;
+  align-items: center;
+}
+
+
+header p{
+  font-size: 20px;
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+  padding-top: 25px;
+}
+
+
+/*----------------ここまでヘッダー-------------*/
+
+.font{
+  font-family:Arial, sans-serif;
+}
+
+.text{
+    font-size: 100px;
+    text-align: center;
+    padding-top: 200px;
+
+}
+.btn-square {
+    display: inline-block ;
+    margin-top: 50px;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+  }
+  .btn-square:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+  }

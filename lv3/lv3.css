@@ -1,0 +1,101 @@
+/*------------------ここからヘッダー---------------------*/
+header{
+  height: 90px;
+  width: 100%;
+  z-index: 10;
+  background: -moz-linear-gradient(right, rgb(32,216,186), #FFF);
+  background: -webkit-linear-gradient(right,  rgb(32,216,186), #FFF);
+  background: linear-gradient(to left,  rgb(32,216,186), #FFF);
+  position: fixed;
+  display: flex;
+}
+
+header img{
+  padding: 5px 0px 0px 20px;
+  width: 220px;
+  height: 84px;
+  display: flex;
+  align-items: center;
+}
+
+
+header p{
+  font-size: 20px;
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+  padding-top: 25px;
+}
+
+
+/*----------------ここまでヘッダー-------------*/
+
+
+.contents{
+  padding-top: 200px;
+}
+
+.center{
+  text-align: center;
+}
+
+.font{
+  font-family: 'Nunito', sans-serif;
+}
+
+.textBox{
+  padding:10px;
+  font-size:1.3em;
+  font-family:Arial, sans-serif;
+  color:black;
+  border:solid 2px #ccc;
+  margin:0 0 20px;
+  width:100px;
+}
+
+.btn-vertical-border {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 5px 11px 5px 15px;
+  text-decoration: none;
+  color: #696969;
+  transition: .4s;
+  margin-left: 10px
+}
+
+.btn-vertical-border:before {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  width: 2px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 3px;
+  background:#696969;
+}
+
+.btn-vertical-border:after {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  width: 2px;
+  height: 100%;
+  top:0;
+  left: 100%;
+  border-radius: 3px;
+  background:#696969;
+}
+
+.btn-vertical-border:hover:before, .btn-vertical-border:hover:after {
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+
+
+  .result{
+    font-size: 20px;
+    margin-left: 10px;
+  }

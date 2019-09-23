@@ -1,0 +1,70 @@
+/*------------------ここからヘッダー---------------------*/
+
+
+/*----------------ここまでヘッダー-------------*/
+body{
+  background-image: url(./img/farm.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-x: center;
+    height:100%;
+    
+  }
+}
+
+.font{
+  font-family:Arial, sans-serif;
+}
+
+.text{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 200px;
+
+}
+
+.btn-square {
+    display: inline-block ;
+    margin-top: 50px;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+
+    -webkit-user-select: none;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+  }
+  .btn-square:active {
+
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/
+    border-bottom: none;
+  }
+
+
+  .button{
+    text-align: center;
+    font-size: 50px;
+  }
+
+  html {
+    touch-action: manipulation;
+  }
+
+  .vue-c{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 30px;
+  }
+
+  .name{
+    padding-top: 10px;
+  }
+
+  .main{
+    

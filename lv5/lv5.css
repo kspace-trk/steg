@@ -1,0 +1,38 @@
+/*------------------ここからヘッダー---------------------*/
+header{
+  height: 90px;
+  width: 100%;
+  z-index: 10;
+  background: -moz-linear-gradient(right, rgb(32,216,186), #FFF);
+  background: -webkit-linear-gradient(right,  rgb(32,216,186), #FFF);
+  background: linear-gradient(to left,  rgb(32,216,186), #FFF);
+  position: fixed;
+  display: flex;
+}
+
+header img{
+  padding: 5px 0px 0px 20px;
+  width: 220px;
+  height: 84px;
+  display: flex;
+  align-items: center;
+}
+
+
+header p{
+  font-size: 20px;
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+  padding-top: 25px;
+}
+
+
+/*----------------ここまでヘッダー-------------*/
+
+.time{
+  padding-top: 200px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 100px;
+}
