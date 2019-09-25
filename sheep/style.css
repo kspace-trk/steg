@@ -10,61 +10,126 @@ body{
     height:100%;
     
   }
-}
 
-.font{
-  font-family:Arial, sans-serif;
-}
 
-.text{
-    font-size: 50px;
-    text-align: center;
-    padding-top: 200px;
-
-}
-
-.btn-square {
-    display: inline-block ;
-    margin-top: 50px;
-    padding: 0.5em 1em;
-    text-decoration: none;
-    background: #668ad8;
-    color: #FFF;
-    border-bottom: solid 4px #627295;
-    border-radius: 3px;
-
-    -webkit-user-select: none;
-    user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-
-  }
-  .btn-square:active {
-
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);/
-    border-bottom: none;
+  .main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family:Arial, sans-serif;
   }
 
+  .background {
+    height: 100vh;
+    width: 70%;
+    background-image: url('./img/farm.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-  .button{
-    text-align: center;
-    font-size: 50px;
-  }
+@media screen and (max-width: 700px) {
+    .background {
+        width: 100%;
+    }
+}
 
+
+
+@media screen and (min-width: 1200px) {
+    .background {
+        width: 50%;
+    }
+}
+
+
+/*iOS用ダブルタップ拡大防止*/
   html {
     touch-action: manipulation;
   }
 
-  .vue-c{
-    text-align: center;
-    padding-top: 100px;
-    font-size: 30px;
-  }
+.titleImage{
+    width: 90%;
+    height: 0px;
+    position: relative;
 
-  .name{
-    padding-top: 10px;
-  }
+    /* (画像の高さ / 画像の横幅) × 100 */
+    padding-top: 12%;
+ 
+    background: url('./img/hituji-bokujyo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-top: 8vh;
+    margin-left: 7%;
+    margin-right: 7%;
+}
 
-  .main{
-    
+
+.startButton img{
+  position: relative;
+  top: 40vh;
+  
+  width: 40%;
+  justify-content: center;
+  margin-left: 32%;
+  margin-right: 32%;
+}
+
+.startButton img:active{
+  position: relative;
+  top: 40.3vh;
+}
+
+.startButton img:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.gif{
+  position: relative;
+  top: 35vh;
+  display: -webkit-flex;
+  display: flex;
+  overflow: hidden;
+  
+
+}
+
+.gif img{
+  position: relative;
+  width: 20%;
+  height: 20%;
+  -webkit-animation: loop 50s -50s linear infinite;
+  animation: loop 50s -50s linear infinite;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: transform;
+
+}
+
+@-webkit-keyframes loop {
+    0% {
+      -webkit-transform: translateX(500%);
+      -ms-transform: translateX(500%);
+      transform: translateX(500%);
+    }
+    to {
+      -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+}
+  
+@keyframes loop {
+    0% {
+      -webkit-transform: translateX(500%);
+      -ms-transform: translateX(500%);
+      transform: translateX(500%);
+    }
+    to {
+      -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+}

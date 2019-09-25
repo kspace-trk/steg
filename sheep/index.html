@@ -7,6 +7,7 @@
      <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
      <link rel="stylesheet" href="style.css">
+
     
     
     
@@ -17,40 +18,28 @@
 
     <body>
 
-     <div class="main">
-
-        <div class="font">
-          
-
-          <!--Vueコンポーネント-->
-          <div id="app" class="vue-c">
-    
-           <input type="text" class="form-control" placeholder="名前を入力してください..." v-model="text_data">
-        
-           <div class="name">あなたの名前は{{text_data}}です。</div>
-            
-         </div>
-
-         <!--Vueコンポーネント-->
+      <div class="main">
+        <div class="background">
+           
 
 
+            <div class="titleImage"></div>
 
-         <div class="text" id="count">
-            <p>ひつじが{{sheeps}}匹</p>
-    
-            <div class="button">
-              <p href="#" class="btn-square" @click="countSheeps()">ひつじ</p>
+            <div class="gif">
+              <img src="./img/sheepGif.gif" alt="sheepGif" > 
             </div>
-      
-          </div>
 
-
-       </div>
-     </div>
+            <div class="startButton">
+             <img src="./img/start.png" alt="startButton" ontouchstart="">
+            </div>
+          
+        </div>
+      </div>
 
      <script src="https://unpkg.com/vue@2.5.13/dist/vue.min.js"></script>
       <script src="vue.js"></script>
      <script src="sheep.js"></script>
+
     
     
     </body>
