@@ -81,10 +81,7 @@ body{
   top: 40.3vh;
 }
 
-.startButton img:hover{
-  opacity: 0.5;
-  cursor: pointer;
-}
+
 
 .gif{
   position: relative;
